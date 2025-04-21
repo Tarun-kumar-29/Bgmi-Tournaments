@@ -8,7 +8,6 @@ const serviceAccount = require('./../tournament-field-firebase-adminsdk-bh7xb-d4
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),  
-  databaseURL: 'https://your-database-name.firebaseio.com'
 });
 
 const db = admin.firestore();
